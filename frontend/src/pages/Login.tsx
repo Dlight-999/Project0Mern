@@ -28,7 +28,7 @@ function Login() {
                     
                 </div>
                 </div>
-                <div className='w-full flex'>
+                <div className='w-full flex max-md:hidden'>
 
                         <img src={image} alt="" className='object-fill rounded-r-md shadow-lg shadow-indigo-950 brightness-75'/>
                         

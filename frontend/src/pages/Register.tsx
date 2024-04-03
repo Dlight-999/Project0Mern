@@ -10,7 +10,7 @@ function Register() {
             <div className='flex h-auto'>
                 <div className=' bg-gray-950 flex w-full justify-center rounded-l-md shadow-lg shadow-indigo-950'>
                 <div className=' flex flex-col justify-center my-1 p-5'>
-                    Login form
+                    Create User
                     <form action="">
                     <div className="input my-2 flex flex-col">
                         <label htmlFor="">Username</label>
@@ -28,6 +28,7 @@ function Register() {
                         <label htmlFor="">Confirm Password</label>
                         <input type="text" name="" id="" className='rounded-lg h-10 w-80 text-black p-2 my-2'/>
                     </div>
+                    <p className='text-center'>Already have account sign in?</p>
                     <div className="input my-2 flex flex-col">
                         <button className=' bg-indigo-600 rounded-lg p-2 px-5 my-2'>Sign up</button>
                     </div>
@@ -35,9 +36,9 @@ function Register() {
                     
                 </div>
                 </div>
-                <div className='w-full flex'>
+                <div className='flex w-full max-md:hidden'>
 
-                        <img src={image} alt="" className='object-fill rounded-r-md shadow-lg shadow-indigo-950 brightness-75'/>
+                        <img src={image} alt="" className='object-fill rounded-r-md shadow-lg shadow-indigo-950 brightness-75 '/>
                         
       
                 </div>
