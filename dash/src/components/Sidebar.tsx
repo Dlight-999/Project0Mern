@@ -3,8 +3,8 @@ import React from 'react'
 function Sidebar() {
   return (
    <>
-    <div className='h-screen max-md:hidden'>
-        <div className='bg-black h-screen w-1/4 text-white flex flex-col fixed'>
+    <div className='h-screen '>
+        <div className='bg-black h-screen w-1/4 text-white flex flex-col fixed max-md:hidden'>
             <div className='text-center py-10 '>
                 Dashboard
             </div>
@@ -29,7 +29,12 @@ function Sidebar() {
                </div>
             </div>
         </div>
-        
+        <div className=''>
+            <div className='bg-black fixed inset-0 text-white flex justify-between p-2 shadow-sm shadow-black w-screen h-9 z-50'>
+               <div>Brand</div>
+               <div>Menu</div>
+            </div>
+        </div>
     </div>
    </>
   )
