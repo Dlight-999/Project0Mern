@@ -1,11 +1,25 @@
-import express from 'express';
-import cors from 'cors';
-import mongoose  from 'mongoose';
-import adminRoutes from './routes/adminRoutes.js';
-const app = express();
-app.use(cors());
-app.use(express.json())
+import path from 'path'
+import express from 'express'
+import dotenv from 'dotenv'
+import cookieParser from 'cookie-parser'
 
-mongoose.connect('mongodb://localhost:27017/project');
-app.use('/',adminRoutes);
-app.listen(5000,()=> console.log("server running"));
+
+//utils
+import connectDb from './config/db.js'
+
+
+dotenv.config();
+
+const port = process.env.PORT || 5000;
+connectDb();
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+app.use(cookieParser());
+
+
+
+app.listen(port,()=>{
+    console.log(`Server Running at port: ${port}`);
+})
