@@ -1,13 +1,16 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
+import TopBar from '../components/TopBar'
 
 function AddActivities() {
   return (
     <>
     <div className='flex'>
     <Sidebar/>
-    <div className=''>
-      <div className='h-full flex flex-col justify-center items-center bg-slate-300 w-screen '>
+   
+    <div className='w-screen h-screen'>
+    <TopBar/>
+      <div className='flex h-full flex-col justify-center items-center bg-slate-300 '>
         form and shit
         <div className=''>
           <form action="" className=''>

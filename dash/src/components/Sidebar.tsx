@@ -4,8 +4,8 @@ function Sidebar() {
   return (
    <>
     <div className='h-screen '>
-        <div className='bg-black h-screen text-white flex flex-col max-md:hidden'>
-            <div className='text-center py-10 '>
+        <div className='bg-black h-screen text-white flex flex-col fixed max-md:hidden'>
+            <div className='text-center py-10 z-2'>
                 Dashboard
             </div>
             <div className='justify-center px-10 py-10 h-96'>
