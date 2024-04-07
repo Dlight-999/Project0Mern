@@ -5,8 +5,10 @@ import TopBar from '../components/TopBar'
 function Dashboard() {
   return (
     <>
+   <div className='flex'>
+   <Sidebar/>
     <TopBar/>
-    <Sidebar/>
+   </div>
     </>
   )
 }
