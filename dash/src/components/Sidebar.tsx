@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Sidebar() {
   return (
    <>
@@ -19,7 +19,7 @@ function Sidebar() {
                 <a href=".">Package</a>
                </div>
                <div className='my-2'>
-                <a href=".">Add Package</a>
+                <Link to='/AddActivities'>Add Package</Link>
                </div>
                <div className='my-2'>
                 <a href=".">Bookings</a>
